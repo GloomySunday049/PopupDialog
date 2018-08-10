@@ -120,7 +120,7 @@ final internal class ZoomTransition: TransitionAnimator {
             })
         case .out:
             UIView.animate(withDuration: outDuration, delay: 0.0, options: [.curveEaseIn], animations: {
-                self.from.view.transform = CGAffineTransform(scaleX: 0.1, y: 0.1)
+                self.from.view.transform = CGAffineTransform(scaleX: 1.4, y: 1.4)
                 self.from.view.alpha = 0.0
             }, completion: { _ in
                 transitionContext.completeTransition(!transitionContext.transitionWasCancelled)
